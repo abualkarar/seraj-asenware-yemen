@@ -36,9 +36,16 @@ export default function Header() {
               المنتجات
             </a>
           </Link>
-          <a href="#about" className="text-foreground hover:text-accent transition-colors font-medium">
-            عن الشركة
-          </a>
+          <Link href="/about">
+            <a className="text-foreground hover:text-accent transition-colors font-medium">
+              عن الشركة
+            </a>
+          </Link>
+          <Link href="/blog">
+            <a className="text-foreground hover:text-accent transition-colors font-medium">
+              المدونة
+            </a>
+          </Link>
           <Link href="/contact">
             <a className="text-foreground hover:text-accent transition-colors font-medium">
               اتصل بنا
@@ -86,9 +93,22 @@ export default function Header() {
                 المنتجات
               </a>
             </Link>
-            <a href="#about" className="block py-2 text-foreground hover:text-accent transition-colors font-medium">
-              عن الشركة
-            </a>
+            <Link href="/about">
+              <a 
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-2 text-foreground hover:text-accent transition-colors font-medium"
+              >
+                عن الشركة
+              </a>
+            </Link>
+            <Link href="/blog">
+              <a 
+                onClick={() => setIsMenuOpen(false)}
+                className="block py-2 text-foreground hover:text-accent transition-colors font-medium"
+              >
+                المدونة
+              </a>
+            </Link>
             <Link href="/contact">
               <a 
                 onClick={() => setIsMenuOpen(false)}
